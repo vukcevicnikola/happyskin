@@ -1,0 +1,23 @@
+.brand {
+    &__img {
+        & img {
+            width: inherit !important;
+            margin: auto;
+        }
+    }
+    &-area {
+        background-size: cover;
+    }
+    &__active {
+        position: relative;
+        z-index: 99;
+    }
+    &__thumb {
+        text-align: center;
+        & img {
+            width: auto !important;
+            display: inline-block;
+            margin: 0 auto;
+        }
+    }
+}

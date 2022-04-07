@@ -1,0 +1,31 @@
+.show-text {
+    & span {
+        font-size: 13px;
+        font-weight: 400;
+        color: #000;
+        font-weight: 500;
+        display: inline-block;
+    }
+}
+
+.ch-right {
+    & .nice-select {
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+        font-size: 13px;
+        color: #000;
+        font-weight: 800;
+        height: inherit;
+        float: inherit;
+        line-height: inherit;
+        padding-right: 30px;
+        background-color: transparent;
+    }
+}
+.page-link-2 {
+    background-color: $white !important;
+    &:hover {
+        background-color: $theme-1 !important;
+    }
+}

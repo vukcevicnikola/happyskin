@@ -1,0 +1,33 @@
+/****************************************************
+30. help-banner
+*****************************************************/
+.help {
+    &__banner {
+        &-area {
+            background: $theme-1;
+            & i {
+                &.glyph-icon{
+                    &::before {
+                        font-size: 75px !important;
+                        color: $white;
+                    }
+                }
+            }
+            & h2 {
+                font-size: 48px;
+                color: #fff;
+                margin-top: 15px;
+                margin-bottom: 55px;
+                @media #{$xs} {
+                    font-size: 22px;
+                }
+                @media #{$md} {
+                    font-size: 37px;
+                }
+            }
+            @media #{$xs} {
+                padding: 35px 0;
+            }
+        }
+    }
+}

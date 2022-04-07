@@ -1,0 +1,61 @@
+
+/* 4. popup */
+.search-popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s;
+	background-color: #fff;
+	z-index: 999;
+}
+.search-popup .search-form {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.search-popup form {
+	width: 850px;
+	position: relative;
+}
+
+.search-popup form input {
+	width: 100%;
+	height: 60px;
+	padding-left: 20px;
+	border: 1px solid #ddcec0;
+}
+.search-popup form button {
+	border: 0;
+    color: #222;
+    background: transparent;
+    font-size: 20px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55px;
+}
+.search-close button {
+	position: fixed;
+    right: 30px;
+    top: 30px;
+    border: 0;
+    background: transparent;
+    color: #222;
+	font-size: 27px;
+	cursor:pointer;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+	border: 1px solid #ddd;
+}
+.visible {
+	opacity: 1;
+	visibility: visible;
+}

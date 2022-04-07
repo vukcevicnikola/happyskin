@@ -1,0 +1,137 @@
+/****************************************************
+29. faq
+*****************************************************/
+.accordion {
+    &-item {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    &-button {
+        border: 0;
+        font-size: 18px;
+        line-height: 1;
+        display: block;
+        text-align: left;
+        color: #000000;
+        padding: 25px 35px;
+        background: $white-6;
+        padding-right: 0;
+        position: relative;
+        & i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 70px;
+            display: inline-block;
+            line-height: 70px;
+            border-top-right-radius: 10px;
+            text-align: center;
+            font-size: 20px;
+            height: 70px;
+            border-bottom-right-radius: 0;
+            background-color: $theme-1;
+            color: $white;
+            &:last-child {
+                display: block;
+            }
+        }
+        &.collapsed {
+            border-bottom-right-radius: 10px;
+            & i {
+                background-color: $gray-3;
+                color: $black;
+                &:last-child {
+                    display: none;
+                }
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+        @media #{$xs} {
+            padding-left: 10px;
+            padding-right: 57px;
+        }
+    }
+    &-body {
+        line-height: 1;
+        background-color: $white-6;
+        padding: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        & p {
+            font-size: 18px;
+        }
+        @media #{$xs} {
+            padding-left: 15px;
+        }
+    }
+    &-collapse {
+        border: 0;
+    }
+}
+
+.faq {
+    &__form {
+        & input {
+            height: 47px;
+            background: transparent;
+            border: 0;
+            outline: none;
+            font-size: 14px;
+            margin-left: 0;
+            text-align: left;
+            width: 220px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        & button {
+            background: #9e4b47;
+            font-size: 16px;
+            line-height: 1;
+            border: 0;
+            padding: 23px 40px;
+            color: #fff;
+            display: inline-block;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            @include transition(.3s);
+            &:hover {
+                color: $theme-1;
+                background-color: $white;
+                border-color: $theme-1;
+            }
+            & i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.accordion-2 {
+    & .accordion-item {
+        margin-bottom: 10px;
+    }
+    & .accordion-body {
+        background-color: $theme-1;
+        & p {
+            color: $white;
+        }
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: $theme-1;
+        color: $white;
+    }
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #f4f4f4;
+    color: #777777;
+}
+.faq__form {
+    padding-left: 50px;
+    margin-top: 23px;
+}

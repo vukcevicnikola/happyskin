@@ -1,0 +1,57 @@
+/****************************************************
+8. info
+*****************************************************/
+.info {
+	&__area {
+		position: fixed;
+		right: -100%;
+		opacity: 0;
+		visibility: hidden;
+		top: 0;
+		padding: 30px;
+		width: 350px;
+		transition: all .5s;
+		height: 100%;
+		z-index: 99;
+		& h4 {
+			position: relative;
+			font-size: 18px;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			&::after {
+				position: absolute;
+				left: 0;
+				content: "";
+				bottom: 0;
+				width: 100px;
+				height: 2px;
+				background-color: #b57751;
+			}
+		}
+	}
+	&__visible {
+		right: 0;
+		visibility: visible;
+		opacity: 1;
+	}
+	&__close {
+		&-icon {
+			margin-bottom: 30px;
+			& button {
+				color: #222;
+				font-size: 20px;
+				border: 0;
+				text-align: center;
+				background: transparent;
+				width: 40px;
+				height: 40px;
+				border: 1px solid #ddd;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.text-right {
+	text-align: right;
+}

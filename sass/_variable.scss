@@ -1,0 +1,82 @@
+/****************************************************
+1. variable
+*****************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Prata&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Prata', serif;
+font-family: 'Roboto', sans-serif;*/
+
+// variable
+$theme-1: #9e4b47;
+$theme-sub-1: #9e4b4714;
+$theme-sub-2: #a9605d;
+$theme-sub-3: #cba7a5;
+$theme-sub-4: #be7370;
+$theme-2: #f7f7f7;
+$white: #fff;
+$white-2: #e2e2e2;
+$white-3: #fff2f1;
+$white-4: #ededed;
+$white-5: #f3f3f3;
+$white-6: #f6f6f6;
+$white-7: #d3d3d3;
+$white-8: #f8f8f8;
+$whtie-9: #d4d4d4;
+$white-10: #efefef;
+$gray-1: #a8a8a8;
+$gray-2: #777777;
+$gray-3: #eaeaea;
+$gray-4: #f9f9f9;
+$gray-5: #999999;
+$gray-6: #1b1b1b;
+$gray-7: #ddd;
+$gray-8: #5a5a59;
+$gray-9: #e8e8e8;
+$gray-10: #f4f4f4;
+$gray-11: #555555;
+$gray-12: #e0e0e0;
+$gray-13: #828282;
+$gray-14: #f5f5f5;
+$gray-15: #bdbdbd;
+$gray-16: #e7e7e7;
+$black: #000000;
+$black-2: #212121;
+$black-3: #414141;
+$black-4: #0e0e0e;
+$orange-1: #ffc000;
+$blue: #3b5999;
+$blue-2: #2d48c3;
+// soft color
+$black-soft-1: #181818;
+$black-soft-2: #0f0f0f;
+$theme-soft-1: #a76764;
+$theme-soft-2: #a95854;
+$theme-soft-3: #782e2b;
+$theme-soft-4: #fff3f2;
+$theme-soft-5: #d99f9d;
+$theme-soft-6: #a75b58;
+$theme-soft-7: #fff4f3;
+// border
+
+
+$border-1: #f1f1f1;
+$border-2: #f2f2f2;
+$min-tab: 'only screen and (min-width: 992px)';
+$max-1700: 'only screen and (max-width: 1700px)';
+$max-1800: 'only screen and (max-width: 1800px)';
+$max-1480: 'only screen and (max-width: 1480px)';
+$max-1400: 'only screen and (max-width: 1400px)';
+$max-1250: 'only screen and (max-width: 1250px)';
+$max-1200: 'only screen and (max-width: 1200px)';
+$max-992: 'only screen and (max-width: 992px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$laptop-2: 'only screen and (min-width: 1200px) and (max-width: 1500px)';
+$laptop-3: 'only screen and (min-width: 1200px) and (max-width: 1415px)';
+$laptop-4: 'only screen and (max-width: 1700px) and (min-width: 1480px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$sm-2: 'only screen and (max-width: 600px)';

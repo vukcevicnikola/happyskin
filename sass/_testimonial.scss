@@ -1,0 +1,182 @@
+/****************************************************
+20.l testimonial
+*****************************************************/
+
+.single__testimonial {
+    &-2 {
+        background-color: #f5f5f5;
+        padding: 50px 0;
+    }
+}
+
+.testimonial {
+    &-area {
+        &__4 {
+            @media #{$md} {
+                margin-top: 70px;
+            }
+            @media #{$xs} {
+                margin-top: 70px;
+            }
+        }
+    }
+    &__left {
+        & blockquote {
+            font-size: 30px;
+            margin-bottom: 0;
+            font-style: italic;
+            padding-left: 77px;
+            text-align: right;
+            line-height: 48px;
+            font-family: 'Playfair Display', serif;
+            @media #{$lg} {
+                font-size: 23px;
+                margin-bottom: 0;
+                padding-left: 10px;
+                text-align: left;
+            }
+            @media #{$md} {
+                padding-left: 20px;
+                text-align: left;
+                font-size: 26px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+            @media #{$xs} {
+                font-size: 20px;
+                margin-bottom: 8px;
+                padding-left: 35px;
+                text-align: left;
+            }
+        }
+    }
+    &__right {
+        & h4 {
+            font-size: 20px;
+            margin-bottom: 0;
+            line-height: 22px;
+        }
+        & p {
+            font-size: 14px;
+            line-height: 22px;
+            & span {
+                font-weight: 700;
+                color: $theme-1;
+            }
+        }
+        @media #{$lg} {
+            padding-left: 0;
+        }
+        @media #{$md} {
+            padding-left: 28px;
+        }
+    }
+}
+.single-testimonial{
+    &-4 {
+        background-color: $gray-4;
+        border-radius: 10px;
+        padding: 40px 45px;
+        padding-right: 60px;
+        &.has-after {
+            position: relative;
+           &::after {
+            position: absolute;
+            left: 50px;
+            top: 100%;
+            width: 25px;
+            height: 25px;
+            background-color: $white;
+            clip-path: polygon(0 0,100% 0,50% 100%, 0 0);
+            content: "";
+           }
+           @media #{$xs} {
+            padding: 35px 20px;
+           }
+
+        }
+        & h6 {
+            display: inline-block;
+            font-size: 20px;
+            line-height: 1;
+            margin-bottom: 0;
+            color: $theme-1;
+        }
+        & i {
+            font-size: 20px;
+            &.active {
+                font-weight: 600;
+                color: $orange-1;
+            }
+        }
+        & .testimonial {
+            &__text {
+                margin-top: 15px;
+                & p {
+                    font-size: 20px;
+                    font-style: italic;
+                    color: $gray-2;
+                    @media #{$xs} {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        @media #{$xs} {
+            padding: 35px 27px;
+        }
+    }
+    &-item {
+        &-2 {
+            position: relative;
+            z-index: 999;
+        }
+        opacity: 0.5;
+        &.slick-current {
+            opacity: 1;
+        }
+    }
+}
+
+.testimonial {
+    &__thumb {
+        &-4 {
+            float: left;
+        }
+    }
+    &__text {
+        &-4 {
+            overflow: hidden;
+            padding-left: 20px;
+            & h5 {
+                margin-bottom: 0;
+                line-height: 1;
+                font-size: 20px;
+            }
+            & p {
+                font-size: 14px;
+                @media #{$xs} {
+                    color: $white;
+                }
+                & span {
+                    color: $theme-1;
+                    font-weight: 700;
+                }
+                @media #{$max-992} {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.team__social {
+    & ul {
+        text-align: center;
+    }
+}
+.has-border-radius {
+    border-radius: 10px;
+}
+.testimonial__tab-4-wrapper .testimonial__text-4 p{
+    color: #777;
+}

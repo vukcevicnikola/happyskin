@@ -1,0 +1,33 @@
+/****************************************************
+19. banner
+*****************************************************/
+.banner {
+    &__1 {
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        &--content {
+            z-index: 9;
+            position: relative;
+            & a {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+        @media #{$md} {
+            margin-top: 80px;
+            padding: 55px 0;
+        }
+        @media #{$xs} {
+            margin-top: 0;
+        }
+    }
+    &__text {
+        position: relative;
+        z-index: 9;
+    }
+    &-area {
+        background-size: cover;
+        background-position: center center;
+    }
+}

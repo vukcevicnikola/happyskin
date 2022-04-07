@@ -1,0 +1,179 @@
+/****************************************************
+28. blog
+*****************************************************/
+.blog {
+    &__thumb {
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+            margin-top: -33px;
+            @media #{$xs} {
+                display: none;
+            }
+        }
+    }
+    &__content {
+        border: 2px solid $white-5;
+        border-top: 0;
+        padding: 50px;
+        margin-top: -28px;
+        padding-right: 45px;
+        padding-top: 60px;
+        @media #{$xs} {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    &__text {
+        & h3 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            @media #{$xs} {
+                font-size:25px;
+            }
+            &:hover {
+                & a {
+                    color: $theme-1;
+                }
+            }
+        }
+        & p {
+            margin-bottom: 15px;
+        }
+    }
+    &__post {
+        &-meta {
+            & ul {
+                & li {
+                    font-size: 14px;
+                    line-height: 1;
+                    border-top: 1px solid $gray-16;
+                    padding-top: 25px;
+                    & span {
+                        &.list-item:not(:first-child) {
+                            padding-left: 25px;
+                            margin-left: 25px;
+                            position: relative;
+                            display: inline-block;
+                            &::after {
+                                position: absolute;
+                                height: 12px;
+                                width: 1px;
+                                background-color: $gray-15;
+                                content: "";
+                                left: -0.5px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                @media #{$xs} {
+                                    display: none;
+                                }
+                            } 
+                        }
+                        @media #{$xs} {
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            margin-right: 5px !important;
+                            margin-bottom: 10px !important;
+                        }
+                    }
+                    & i {
+                        color: $theme-1;
+                        padding-right: 10px;
+                    }
+                }
+                @media #{$xs} {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__testimonial {
+        background: $theme-1;
+        position: relative;
+        &::after {
+            position: absolute;
+            left: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            font-family: "Font awesome 5 pro";
+            font-weight: 600;
+            color: #fff;
+            font-size: 60px;
+            @media #{$xs} {
+                left: 16px;
+                top: 5px;
+                transform: translateY(0);
+                font-size: 35px;
+            }
+        }
+        padding: 60px 150px;
+        & h3 {
+            font-size: 36px;
+            color: $white;
+            @media #{$xs} {
+                font-size: 23px;
+            }
+        }
+        @media #{$xs} {
+            padding: 60px 35px;
+        }
+    }
+    &__pagination {
+        & ul {
+            & li {
+                & a {
+                    &.page-link {
+                        border: 0;
+                        background: $white-6;
+                        padding: 0;
+                        width: 50px;
+                        font-weight: 700;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: $gray-2;
+                        margin: 0 10px;
+                        border-radius: 10px;
+                        &:hover {
+                            background-color: $theme-1;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.author {
+    &__box {
+        & a {
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 4%);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+    }
+    &__name {
+        & span {
+            color: #000;
+            display: inline-block;
+            padding-left: 15px;
+            font-weight: 700;
+        }
+    }
+}
+.list-item{
+    & a {
+        color: #777777;
+        &:hover {
+            color: $theme-1;
+        }
+    }
+}

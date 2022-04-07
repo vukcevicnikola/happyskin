@@ -1,0 +1,25 @@
+/****************************************************
+2. mixin
+*****************************************************/
+@mixin background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  //transition
+  @mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+@mixin inputStyle {
+  border: 0;
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 50px;
+  font-size: 14px;
+  color: #999999;
+}

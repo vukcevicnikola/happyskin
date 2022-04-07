@@ -1,0 +1,23 @@
+/****************************************************
+3. animation
+*****************************************************/
+
+@mixin textAnimated($time,$delay) {
+    animation-name: textAnimated;
+    animation-duration: #{$time};
+    animation-timing-function: ease-out;
+    animation-delay: $delay;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes textAnimated {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

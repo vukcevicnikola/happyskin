@@ -1,0 +1,92 @@
+/****************************************************
+23. choose
+*****************************************************/
+.choose {
+    &-area {
+        &-4 {
+            @media #{$md} {
+                margin-bottom: 70px;
+            }
+            @media #{$md} {
+                margin-top: 70px;
+            }
+            @media #{$xs} {
+                margin-top: 70px;
+            }
+        }
+    }
+    &__collapse {
+        & .card {
+            border: 0;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 0;
+            & h2 {
+                line-height: 1;
+                margin: 0;
+            }
+            &-header {
+                padding: 0;
+                border: 0;
+                & button{
+                    line-height: 1;
+                    color: $black;
+                    font-size: 18px;
+                    text-transform: inherit;
+                    display: block;
+                    font-weight: 400;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    text-decoration: none;
+                    font-family: 'Prata', serif;
+                    padding: 0;
+                    width: 100%;
+                    text-align: left;
+                    border: 0;
+                    background-color: $theme-1;
+                    padding: 13px 15px;
+                    transition: all .3s;
+                    color: $white;
+                    &.collapsed {
+                        color: $black;
+                        background-color: $gray-10;
+                    }
+                    & i {
+                        display: inline-block;
+                        width: 42px;
+                        height: 42px;
+                        line-height: 42px;
+                        text-align: center;
+                        border-radius: 10px;
+                        background: $white;
+                        margin-right: 20px;
+                        color: $black;
+                        @media #{$xs} {
+                            float: left;
+                            margin-right: 10px;
+                        }
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            &-body {
+                background-color: $theme-1;
+                color: $white;
+                font-size: 16px;
+                padding: 40px;
+                padding-top: 0;
+            }
+        }
+    }
+    &__thumb {
+        position: relative;
+        &-2 {
+            position: absolute;
+            left: -115px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

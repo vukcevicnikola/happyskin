@@ -1,0 +1,45 @@
+/****************************************************
+25. journy
+*****************************************************/
+.video {
+    &__thumb {
+        position: relative;
+        &-link {
+            & a {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                color: $theme-1;
+                font-size: 20px;
+                line-height: 100px;
+                border-radius: 50%;
+                background-color: $white;
+                text-align: center;
+                & i{
+                    font-weight: 600;
+                }
+                &:hover {
+                    background-color: $theme-1;
+                    color: $white;
+                }
+            }
+        }
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+    }
+    &-gallery {
+        &__4 {
+            @media #{$md} {
+                margin-top: 70px;
+            }
+            @media #{$xs} {
+                margin-top: 70px;
+            }
+        }
+    }
+}
