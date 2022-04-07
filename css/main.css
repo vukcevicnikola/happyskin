@@ -254,6 +254,7 @@ a {
 
 p {
   font-size: 16px;
+  font-family: 'Prata', serif;
   font-weight: normal;
   line-height: 30px;
   color: #777777;
@@ -1747,18 +1748,18 @@ i.glyph-icon.logo-sm::before {
   border-radius: 10px;
 }
 .mobile-toggle-bar-2 button i {
-  color: #9e4b47;
+  color: var(--dark);
 }
 @media (max-width: 767px) {
   .mobile-toggle-bar-2 button {
-    width: 35px;
+    width: 50px;
     height: 35px;
     line-height: 35px;
     margin-left: 5px;
   }
 }
 .mobile-toggle-bar-2 button:hover {
-  background-color: #9e4b47;
+  background-color: var(--primary);
 }
 .mobile-toggle-bar-2 button:hover i {
   color: #fff;
@@ -9071,6 +9072,6 @@ span.details-pro-price {
 }
 
 span {
-  font-family: "Caviar Dreams", sans-serif;
+  font-family: 'Prata', serif;
 }
 /*# sourceMappingURL=main.css.map */
