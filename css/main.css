@@ -1455,7 +1455,7 @@ i.glyph-icon.logo-sm::before {
   }
 }
 .header-nav ul li:hover > a {
-  color: #9e4b47;
+  color: var(--secondary);
 }
 .header-nav ul li:hover > .submenu {
   opacity: 1;
@@ -1469,8 +1469,8 @@ i.glyph-icon.logo-sm::before {
   left: 0;
   min-width: 200px;
   padding: 15px 0;
-  background: #fff;
-  border-top: 4px solid #9e4b47;
+  background: var(--body);
+  border-top: 4px solid var(--dark);
   z-index: 11;
   visibility: hidden;
   opacity: 0;
@@ -1479,15 +1479,15 @@ i.glyph-icon.logo-sm::before {
 }
 .header-nav .submenu li {
   display: block;
-  margin-left: 0;
+  margin-left: 10;
 }
 .header-nav .submenu li a {
   display: block;
   font-weight: 500;
-  text-transform: capitalize;
-  font-size: 14px;
+  /* text-transform: capitalize; */
+  font-size: 16px;
   word-spacing: 2px;
-  padding: 9px 25px;
+  padding: 15px 15px;
 }
 .header-nav .submenu li .submenu {
   left: 100%;
@@ -1998,9 +1998,9 @@ button.mobile-nav-close {
 .close-icon > button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 0 none;
-  color: #ff4a57;
+  color: var(--primary);
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
   padding: 0;
 }
 
