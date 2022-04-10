@@ -8399,6 +8399,7 @@ a.replay-btn i {
 .contact-wrapper {
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 10px 10px 10px 10px;
 }
 .contact-widget {
   background-color: #fff;
