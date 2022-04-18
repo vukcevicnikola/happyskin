@@ -2751,7 +2751,7 @@ button.mobile-nav-close {
   transition: all 0.3s ease-out 0s;
 }
 .about__info a:hover {
-  background-color: #9e4b47 !important;
+  background-color: var(--secondary) !important;
 }
 .about__info a:hover i {
   color: #fff !important;
