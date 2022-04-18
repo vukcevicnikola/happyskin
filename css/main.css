@@ -257,7 +257,7 @@ p {
   font-family: 'Prata', serif;
   font-weight: normal;
   line-height: 30px;
-  color: #777777;
+  color: var(--dark);
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -329,7 +329,7 @@ label {
 .theme-sm-btn {
   color: #fff;
   line-height: 1;
-  background: #9e4b47;
+  background: var(--secondary);
   padding: 10px 20px;
   display: inline-block;
   border-radius: 10px;
@@ -440,12 +440,12 @@ label {
 }
 
 .white-btn {
-  background-color: #fff;
-  color: #9e4b47;
+  background-color: var(--primary);
+  color: var(--dark);
 }
 .white-btn:hover {
-  background-color: #9e4b47;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--dark);
 }
 
 .transparent-btn-1 {
@@ -4054,12 +4054,12 @@ a.featured-btn:hover i {
   font-weight: 700;
 }
 .testimonial__active .slick-dots button:hover, .appoint__active .slick-dots button:hover {
-  background-color: #9e4b47;
+  background-color: var(--secondary);
   color: #fff;
 }
 @media only screen and (max-width: 992px) {
   .testimonial__active .slick-dots button:hover, .appoint__active .slick-dots button:hover {
-    background-color: #ff786e;
+    background-color: var(--secondary);
     color: #fff;
   }
 }
@@ -4076,12 +4076,12 @@ a.featured-btn:hover i {
   }
 }
 .testimonial__active .slick-active button, .appoint__active .slick-active button {
-  background-color: #9e4b47;
+  background-color: var(--secondary);
   color: #fff;
 }
 @media only screen and (max-width: 992px) {
   .testimonial__active .slick-active button, .appoint__active .slick-active button {
-    background-color: #ff786e;
+    background-color: var(--secondary);
   }
 }
 
@@ -9071,7 +9071,7 @@ span.details-pro-price {
 
 .fab {
   font-size: 18px;
-  color: darkslategray;
+  color: var(--dark);
 }
 
 span {
