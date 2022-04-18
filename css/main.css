@@ -3038,8 +3038,9 @@ a.featured-btn:hover i {
   margin: 0 10px;
 }
 .features__tab ul li button.nav-link.active {
-  background-color: #9e4b47;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--dark);
+  font-weight: bold;
 }
 @media only screen and (max-width: 1700px) {
   .features__tab ul li button {
